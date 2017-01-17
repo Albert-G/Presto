@@ -11,7 +11,7 @@ const styles = {
   },
 }
 
-export default class PrestoBarMenu extends React.Component {
+export default class BarMenu extends React.Component {
   render() {
     return (
       <IconMenu

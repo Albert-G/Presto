@@ -1,10 +1,10 @@
 import React from 'react';
-import PrestoToobar from './PrestoToolbar'
+import Toobar from './toolbar'
 
 export default class PrestoMain extends React.Component {
   render() {
     return (
-        <PrestoToobar />
+        <Toobar />
     );
   }
 }

@@ -1,11 +1,11 @@
 import React from 'react';
 import AppBar from 'material-ui/AppBar';
-import PrestoBarMenu from './PrestoBarMenu'
+import BarMenu from './bar-menu'
 
 const PrestoAppBar = () => (
   <AppBar
     title="Presto"
-    iconElementRight={<PrestoBarMenu />}
+    iconElementRight={<BarMenu />}
   />
 );
 

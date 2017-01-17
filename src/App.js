@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 import getMuiTheme from 'material-ui/styles/getMuiTheme';
-import PrestoTheme from './Theme/PrestoTheme'
-import PrestoMain from './Components/PrestoMain'
+import PrestoTheme from './theme/presto-theme'
+import PrestoMain from './components/main'
 
 class App extends Component {
   render() {

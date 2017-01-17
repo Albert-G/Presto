@@ -1,7 +1,7 @@
 import React from 'react';
 import {Toolbar, ToolbarGroup, ToolbarTitle} from 'material-ui/Toolbar';
-import PrestoSearchBar from './PrestorSearchBar';
-import PrestoBarMenu from './PrestoBarMenu';
+import SearchBar from './search-bar';
+import BarMenu from './bar-menu';
 
 const sytles = {
   prestoToobarStytles: {
@@ -15,12 +15,12 @@ export default class PrestoToolbar extends React.Component {
     return (
       <Toolbar style={sytles.prestoToobarStytles}>
         <ToolbarGroup>
-            <ToolbarTitle text="Presto" style={{color: 'white', fontSize: '16'}} />
+            <ToolbarTitle text="Presto" style={{color: 'white', fontSize: '16px'}} />
         </ToolbarGroup>
 
         <ToolbarGroup lastChild={true}>
-            <PrestoSearchBar />        
-            <PrestoBarMenu />
+            <SearchBar />        
+            <BarMenu />
         </ToolbarGroup>
       </Toolbar>
     );
