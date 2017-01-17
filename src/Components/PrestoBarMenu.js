@@ -4,15 +4,23 @@ import IconMenu from 'material-ui/IconMenu';
 import MenuItem from 'material-ui/MenuItem';
 import MoreVertIcon from 'material-ui/svg-icons/navigation/more-vert';
 
-const PrestoBarMenu = () => (
-  <IconMenu
-    iconButtonElement={<IconButton><MoreVertIcon /></IconButton>}
-    targetOrigin={{horizontal: 'right', vertical: 'top'}}
-    anchorOrigin={{horizontal: 'right', vertical: 'top'}}
-  >
-    <MenuItem primaryText="Clear all" />
-    <MenuItem primaryText="Open downloads folder" />
-  </IconMenu>
-);
+const styles = {
+  iconStyles: {
+    width: 20,
+    height: 20,
+  },
+}
 
-export default PrestoBarMenu;
+export default class PrestoBarMenu extends React.Component {
+  render() {
+    return (
+      <IconMenu
+      iconButtonElement={<IconButton iconStyle={styles.iconStyles}><MoreVertIcon color='white' /></IconButton>}
+      targetOrigin={{horizontal: 'right', vertical: 'top'}}
+      anchorOrigin={{horizontal: 'right', vertical: 'top'}}>
+        <MenuItem primaryText="Clear all" />
+        <MenuItem primaryText="Open downloads folder" />
+      </IconMenu>
+    );
+  }
+}

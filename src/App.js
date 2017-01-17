@@ -7,7 +7,7 @@ import PrestoMain from './Components/PrestoMain'
 class App extends Component {
   render() {
     return (
-      <MuiThemeProvider muiTheme={getMuiTheme()}>
+      <MuiThemeProvider muiTheme={getMuiTheme(PrestoTheme)}>
         <PrestoMain />
       </MuiThemeProvider>
     );
