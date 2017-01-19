@@ -2,10 +2,11 @@ import React from 'react';
 import {Toolbar, ToolbarGroup, ToolbarTitle} from 'material-ui/Toolbar';
 import SearchBar from './search-bar';
 import BarMenu from './bar-menu';
+import { PrestoThemeColor } from '../theme/presto-theme'
 
 const sytles = {
   prestoToobarStytles: {
-    backgroundColor: '#3367D6',
+    backgroundColor: PrestoThemeColor,
     height: 56,
   },
 }

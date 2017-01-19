@@ -40,7 +40,7 @@ const _searchBar = ({onChange, onKeyDown, clearButtonOnClick, searchText, hasInp
         }        
         </ToolbarGroup>          
       </Toolbar>
-)
+);
 
 _searchBar.propTypes = {
   onChange: PropTypes.func.isRequired,

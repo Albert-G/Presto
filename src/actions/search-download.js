@@ -1,12 +1,12 @@
 export const setSearchDownload = (newValue) => {
     return {
         type: 'SET_SEARCH_DOWNLOAD',
-        searchText: newValue
+        searchText: newValue,
     }
 }
 
 export const clearSearchDownload = () => {
     return {
-        type: 'CLEAR_SEARCH_DOWNLOAD'
+        type: 'CLEAR_SEARCH_DOWNLOAD',
     }
 }
